@@ -1,33 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
-header,
-nav,
-main,
-aside,
-section,
-article,
-footer,
-div {
-    display: block;
-}
-
-a {
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 128px;
+/* Fonts */
+.merriweather-regular {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* Body */
@@ -35,7 +17,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-color: #612999;
+    background-color: #ce0a0a;
 }
 
 /* Header */
@@ -47,48 +29,33 @@ header {
     padding: 0 32px;
 }
 
-
 #logo {
-    display: flex;
-    align-items: center;
-    background-image: url("images/Logo-Alfa-144x120.png");
-    background-repeat: no-repeat;
+    background: url("images/Logo-Alfa-144x120.png") no-repeat;
     background-size: contain;
-    margin-left: 32px;
     width: 64px;
     height: 64px;
+    margin-right: 16px;
 }
 
-#logo span {
-    color: #3E3F43;
-    font-family: Nunito;
-    font-size: 24px;
-    font-style: normal;
+#logoName {
+    font-size: 36px;
     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 6px;
-    padding-left: 61px;
+    color: #000;
 }
 
 nav {
-    display: flex;
-    margin-right: 135px;
-    gap: 64px;
+    margin-left: auto;
 }
 
 nav a {
-    color: #612999;
-    font-family: nunito;
-    font-size: 30px;
-    font-style: normal;
+    margin-left: 24px;
+    text-decoration: none;
+    color: #000;
     font-weight: 400;
-    line-height: normal;
 }
-._selected {
-    font-weight: 700;
-}
+
 nav a:hover {
-    color: #d8b1ff;
+    color: #ca1010;
 }
 
 
@@ -330,19 +297,16 @@ footer {
 /* Media Query for Responsive Footer */
 @media screen and (max-width: 768px) {
     footer {
-        padding: 0 16px;
-        /* Adjust padding for smaller screens */
+        padding: 0 16px; /* Adjust padding for smaller screens */
     }
 
     #footer-links-section,
     #footer-links-section1 {
-        width: 50%;
-        /* Adjust width for smaller screens */
+        width: 50%; /* Adjust width for smaller screens */
     }
 
     #footer-social-icons-section {
-        display: none;
-        /* Hide social icons on smaller screens */
+        display: none; /* Hide social icons on smaller screens */
     }
 }
 
@@ -354,11 +318,11 @@ footer {
 /*cover photos */
 
 #our-cars-photos img {
-
+    
     max-width: 300px;
-
+    
     height: 300px;
-
+    
     margin-bottom: 32px;
     border: 4px solid #ffffff;
 }
