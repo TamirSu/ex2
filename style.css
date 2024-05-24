@@ -2,9 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
+=======
+* {
+    margin: 0;
+    padding: 0;
+
+>>>>>>> 13735a5d14019fd9ee7260b1723b035cbb9179c2
 }
 
 header,
@@ -29,10 +36,35 @@ header {
     height: 128px;
 }
 
+<<<<<<< HEAD
 #logo {
     display: flex;
     align-items: center;
     background-image: url(/new/images/alfa-romeo-new-black9279.jpg);
+=======
+/* Body */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #612999;
+}
+
+/* Header */
+header {
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+}
+
+
+#logo {
+    display: flex;
+    align-items: center;
+    background-image: url("images/Logo-Alfa-144x120.png");
+>>>>>>> 13735a5d14019fd9ee7260b1723b035cbb9179c2
     background-repeat: no-repeat;
     background-size: contain;
     margin-left: 32px;
@@ -59,21 +91,32 @@ nav {
 
 nav a {
     color: #612999;
+<<<<<<< HEAD
     font-family: Nunito;
+=======
+    font-family: nunito;
+>>>>>>> 13735a5d14019fd9ee7260b1723b035cbb9179c2
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+<<<<<<< HEAD
 
 .Home {
     font-weight: 700;
 }
 
+=======
+._selected {
+    font-weight: 700;
+}
+>>>>>>> 13735a5d14019fd9ee7260b1723b035cbb9179c2
 nav a:hover {
     color: #d8b1ff;
 }
 
+<<<<<<< HEAD
 .background_homePage {
     background-image: url(images/tablet.jpg);
     background-repeat: no-repeat;
@@ -357,10 +400,297 @@ footer > div {
 .cars-list-section h2 {
     color: #612999;
     font-family: Rubik;
+=======
+
+/* Media Query for Responsive Header */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 0 16px;
+        /* Adjust padding for smaller screens */
+    }
+
+    #logo {
+        width: 48px;
+        /* Decrease logo size for smaller screens */
+        height: 48px;
+        margin-right: 12px;
+        /* Adjust margin for smaller screens */
+    }
+
+    #logoName {
+        font-size: 24px;
+        /* Decrease font size for smaller screens */
+    }
+
+    nav a {
+        margin-left: 16px;
+        /* Adjust margin for smaller screens */
+        font-size: 16px;
+        /* Decrease font size for smaller screens */
+    }
+}
+
+
+nav a {
+    margin-left: 24px;
+    text-decoration: none;
+    color: #000000;
+    font-family: "Merriweather";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    color: rgb(202, 16, 16);
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding-bottom: 150px;
+    /* Adjust as needed */
+}
+
+/* Cover Photo */
+#cover-photo-sec {
+    height: 100vh;
+    background: url("/test/images/tablet.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+#cover-photo-sec h1 {
+    position: absolute;
+    top: 80px;
+    left: 180px;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: "Merriweather";
+    font-size: 6vw;
+    font-weight: 800;
+    text-align: center;
+}
+
+#cover-photo-sec p {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    font-family: "Merriweather";
+    font-size: 2.5vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Paragraphs Section */
+#paragraphs-sec {
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+#paragraphs-sec h2 {
+    color: #ffffff;
+    font-family: "Merriweather";
+    font-size: 2.5vw;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+#paragraphs-sec p {
+    color: #000000;
+    font-family: "Merriweather";
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+/* Cards Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 39px;
+    margin-left: 32px;
+
+}
+
+.container h2 {
+    width: 100%;
+    display: block;
+    height: 40px;
+    color: #f5f5f5;
+    font-family: "Merriweather";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+    margin-bottom: 27px;
+}
+
+.card {
+    position: relative;
+    /* Add position relative */
+    width: 350px;
+    height: 500px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+    border-radius: 38px;
+
+    background-color: #ffffff;
+    box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 20px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card>img {
+    width: 100%;
+    border-top-left-radius: 38px;
+    border-top-right-radius: 38px;
+}
+
+.card h4 {
+    color: #000000;
+    font-family: "Merriweather";
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 16px 0;
+}
+
+.cardParagraph {
+    color: #333333;
+    font-family: "Merriweather";
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.price {
+    color: #000000;
+    font-family: "Merriweather";
+    font-size: 2vw;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-left: 16px;
+    position: absolute;
+    /* Add position absolute */
+    bottom: 16px;
+    /* Adjust as needed */
+    left: 16px;
+    /* Adjust as needed */
+}
+
+
+/* Footer */
+footer {
+    background-color: #fff;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#footer-links-section,
+#footer-links-section1 {
+    width: 30%;
+}
+
+#footer-links-section ul,
+#footer-links-section1 ul {
+    list-style: none;
+}
+
+#footer-links-section a,
+#footer-links-section1 a {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+#footer-social-icons-section {
+    display: flex;
+    align-items: center;
+}
+
+#footer-social-icons-section a {
+    margin-right: 16px;
+}
+
+#footer-social-icons-section p {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* Media Query for Responsive Footer */
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 0 16px;
+        /* Adjust padding for smaller screens */
+    }
+
+    #footer-links-section,
+    #footer-links-section1 {
+        width: 50%;
+        /* Adjust width for smaller screens */
+    }
+
+    #footer-social-icons-section {
+        display: none;
+        /* Hide social icons on smaller screens */
+    }
+}
+
+
+
+
+/*Page 2 */
+
+/*cover photos */
+
+#our-cars-photos img {
+
+    max-width: 300px;
+
+    height: 300px;
+
+    margin-bottom: 32px;
+    border: 4px solid #ffffff;
+}
+
+#our-cars-photos img :last-child {
+    margin-right: 116px;
+}
+
+#cars-list-section {
+    margin-left: 32px;
+}
+
+#cars-list-section h2 {
+    width: 275px;
+    color: #000000;
+    font-family: "Merriweather";
+>>>>>>> 13735a5d14019fd9ee7260b1723b035cbb9179c2
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
     line-height: 40px;
+<<<<<<< HEAD
 }
 
 .cars-list-section ul {
@@ -372,10 +702,26 @@ ul li {
     align-items: center;
     color: #000;
     font-family: Rubik;
+=======
+    margin-bottom: 32px;
+
+}
+
+#cars-list-section ul {
+    list-style: none;
+}
+
+#cars-list-section ul li p {
+    position: absolute;
+    display: inline;
+    color: #000;
+    font-family: "Merriweather";
+>>>>>>> 13735a5d14019fd9ee7260b1723b035cbb9179c2
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 14px;
+<<<<<<< HEAD
     margin-bottom: 16px;
 }
 
@@ -427,14 +773,84 @@ input[type=submit] {
 
 input[type=submit]:hover {
   background-color: #45a049;
+=======
+    height: 18px;
+    margin-top: 32px;
+}
+
+.group-icon {
+    position: absolute;
+    display: block;
+    margin-top: 20px;
+    margin-left: 26px;
+    width: 29px;
+    height: 36.6px;
+    flex-shrink: 0;
+}
+
+.ellipse-page2 {
+    height: 82px;
+    width: 82px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.contact-form {
+    background-color: #ffffffb6;
+    height: 503px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    font-family: "Merriweather";
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.contact-form h2 {
+    margin-bottom: 207px;
+    font-size: 24px;
+    font-family: "Merriweather";
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form .form-group textarea {
+    resize: vertical;
+    height: 150px;
+    max-height: 156px;
+>>>>>>> 13735a5d14019fd9ee7260b1723b035cbb9179c2
 }
 
 .contact-form .form-group button {
     width: 100%;
     padding: 10px 20px;
+<<<<<<< HEAD
     background-color: #612999;
     border: none;
     color:  #fff;
+=======
+    background-color: #992d29;
+    border: none;
+    color: #fff;
+>>>>>>> 13735a5d14019fd9ee7260b1723b035cbb9179c2
     font-family: "Merriweather";
     font-size: 16px;
     border-radius: 4px;
@@ -445,6 +861,7 @@ input[type=submit]:hover {
     background-color: rgb(245, 242, 247);
 }
 
+<<<<<<< HEAD
 .contact-form {
   border-radius: 55px;
   background-color:  #EFECFF;;
@@ -456,3 +873,14 @@ input[type=submit]:hover {
   margin-bottom: 100px;
   font-family: Merriweather;
 }
+=======
+.special-heading {
+    margin-left: 32px;
+    font-family: "Merriweather";
+    margin-bottom: 32px;
+    margin-top: 32px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #ffffff;
+}
+>>>>>>> 13735a5d14019fd9ee7260b1723b035cbb9179c2
